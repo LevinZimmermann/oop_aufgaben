@@ -14,6 +14,9 @@ namespace TannenbaumLibrary
         int width_stamm = 0;
         string result;
 
+        /// <summary>
+        /// Gets or sets the Stammwidth.
+        /// </summary>
         public int Stammwidth
         {
             get { return width_stamm; }
