@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aufgabe6.Properties
+namespace Aufgabe8.Properties
 {
 
 

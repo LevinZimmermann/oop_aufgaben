@@ -37,13 +37,9 @@ namespace Aufgabe5
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
-
-
             var oldform = new Form1();
             var newform = new Warenkorb(orderedItems);
             newform.ShowDialog();
-            
         }
 
         public void Form1_Load(object sender, EventArgs e)
