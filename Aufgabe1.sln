@@ -15,9 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabe4", "Aufgabe4\Aufgab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabe5", "Aufgabe5\Aufgabe5.csproj", "{4241AC99-B42E-4ED2-BA76-3C4F2C3C1270}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabe6", "Aufgabe6\Aufgabe6.csproj", "{CF72D9E1-94FD-4763-A07D-A26529AD90CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabe7", "Aufgabe6\Aufgabe7.csproj", "{CF72D9E1-94FD-4763-A07D-A26529AD90CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabe7", "Aufgabe7\Aufgabe7.csproj", "{609F22AC-B44B-4E43-BF70-4A87011C2596}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aufgabe6", "Aufgabe7\Aufgabe6.csproj", "{609F22AC-B44B-4E43-BF70-4A87011C2596}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
