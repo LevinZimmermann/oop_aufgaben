@@ -17,19 +17,19 @@ namespace Aufgabe8
 
         }
 
-        public string ContactName
+        public string Name
         {
             get { return name; }
             set { name = value; }
         }
 
-        public string ContactEmail
+        public string Email
         {
             get { return email; }
             set { email = value; }
         }
 
-        public string ContactPhone
+        public string Phone
         {
             get { return phone; }
             set { phone = value; }

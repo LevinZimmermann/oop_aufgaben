@@ -76,6 +76,8 @@
             // 
             // dgvContacts
             // 
+            this.dgvContacts.AllowUserToAddRows = false;
+            this.dgvContacts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvContacts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContacts.Location = new System.Drawing.Point(12, 58);
             this.dgvContacts.Name = "dgvContacts";

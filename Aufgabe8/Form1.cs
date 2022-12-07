@@ -18,7 +18,6 @@ namespace Aufgabe8
         public Form1()
         {
             InitializeComponent();
-
             dgvContacts.DataSource = contactList.Contacts;
         }
 
@@ -33,6 +32,7 @@ namespace Aufgabe8
             {
                 // Speicherort des Files einer String-Variable zuweisen
                 string path = openFileDialog.FileName;
+                contactList.ImportCsv(path);
             }
         }
 
@@ -45,19 +45,38 @@ namespace Aufgabe8
             {
                 // Speicherort des Files einer String-Variable zuweisen
                 string path = saveFileDialog.FileName;
+                contactList.ExportCsv(path);
             }
         }
 
         private void deleteListBTN_Click(object sender, EventArgs e)
         {
-            dgvContacts.ClearSelection();
+            DialogResult result = MessageBox.Show("Wirklich alle Kontakte Löschen?",
+            "Caption", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+                contactList.Clear();
         }
 
         private void NewContactBTN_Click(object sender, EventArgs e)
         {
-            ContactList c = new ContactList();
-            c.GetContactListItem();
+            if (NewContactName.Text != "" && NewContactEmail.Text != "" && NewContactPhone.Text != "") 
+            {
+                Contact contact = new Contact();
+                contact.Email = NewContactEmail.Text;
+                contact.Phone = NewContactPhone.Text;
+                contact.Name = NewContactName.Text;
+                contactList.Contacts.Add(contact);
 
+                NewContactEmail.Clear();
+                NewContactName.Clear();
+                NewContactPhone.Clear();
+
+                NewContactName.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Bitte alle felder ausfüllen");
+            }
         }
     }
 }
